@@ -48,7 +48,7 @@ function createTaskCard(task) {
       deleteButton.on('click', handleDeleteTask);
 
       // compares the current date and the task due date and assigns a class to the card to place it in the right lane
-      if (task.status !== 'done') {
+      if (task.taskStatus !== 'done') {
             let now = dayjs();
             let taskDueDate = dayjs(task.dueDate, 'DD/MM/YYYY');
     
@@ -59,6 +59,11 @@ function createTaskCard(task) {
                 taskCard.addClass('bg-danger');
                 deleteButton.addClass('border-light');
             }
+        } 
+        
+        else if (task.taskStatus === 'done' ) {
+            taskCard.removeClass('bg-danger bg-warning');
+            taskCard.addClass('bg-success');
         }
 
       // appends all the properties to the task card
