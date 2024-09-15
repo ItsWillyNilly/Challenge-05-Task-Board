@@ -2,7 +2,7 @@
 This is my Task Board created using HTML, JavaScript and CSS powered by JQuery.
 
 ## Description
-I was tasked with adding code to existing code. I was tasked to create an application that allows a team to manage project tasks.
+I was tasked with adding code to existing code. This is an application that allows a team to manage project tasks.
 
 ## User Story
 
